@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+  color: #fff;
+}
+
+body{
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(45deg, #FFD203cc, #01009C88, #D40028cc), url('https://media-cdn.tripadvisor.com/media/photo-s/11/53/50/3b/top-of-the-world.jpg');
+ 
+  height: 100vh;
+  padding: 5rem 0;
+  
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.wrapper{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: #00000044;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  
+  box-shadow: 0 0 30px #000;
+}
+h1{
+  position: absolute;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 200;
+  width: 100%;
+  overflow: hidden;
+  letter-spacing: 10px;
+
+}
+body{
+  background-color: aliceblue;
+}
+  
+h1,
+he > span{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+  
+h1 > span{
+  margin: 0 15px;
+}
+  
+h1 > span > span{
+  display: inline-block;
+  perspective: 1000px;
+  transform-origin: 50% 50%;
+}
+  
+h1 > span > span > span{
+  display: inline-block;
+  color: hsla(0,0%,0%,0);
+  transform-style: preserve-3d;
+  transform: translate3d(0,0,0);
+  animation: opening 5.2s linear forwards;
+}
+
+h1:nth-child(2) > span > span > span{
+  animation-delay: 5s;
+}
+h1:nth-child(3) > span > span > span{
+  animation-delay: 10s;
+}
+h1:nth-child(4) > span > span > span{
+  animation-delay: 15s;
+}
+
+h1:nth-child(5) > span > span > span{
+  animation-delay: 20s;
+}
+
+h1:nth-child(6) > span > span > span{
+  animation-delay: 25s;
+}
+
+h1:nth-child(7) > span > span > span{
+  animation-delay: 30s;
+}
+
+@keyframes opening{
+  0%{
+    text-shadow: 0 0 50px white;
+    letter-spacing: 80px;
+    opacity: 0.2;
+    transform: rotateY(-90deg);
+  }
+  50%{
+    text-shadow: 0 0 1px white;
+    letter-spacing: 14px;
+    opacity: 0.8;
+    transform: rotateY(0deg);
+  }
+  85%{
+    text-shadow: 0 0 1px white;
+    opacity: 0.8;
+    transform: rotateY(0deg) translateZ(100px);
+  }
+  100%{
+    text-shadow: 0 0 10px white;
+    opacity: 0;
+    transform: translateZ(130px);
+    pointer-events: none;
+  }
+}
+
+h1:nth-child(8) > span > span > span{
+  font-size: 20px;
+  animation:fadeIn 4s lineal 40s forwards;
+}
+.button{
+  justify-items: end;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+    text-shadow: 0 0 50px white;
+  }
+  100%{
+    opacity: 0.8;
+    text-shadow: 0 0 1px white;
+  }
+}
