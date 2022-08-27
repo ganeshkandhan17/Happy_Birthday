@@ -76,17 +76,17 @@ h1 > span > span > span{
 }
 
 h1:nth-child(2) > span > span > span{
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 h1:nth-child(3) > span > span > span{
-  animation-delay: 9s;
+  animation-delay:7s;
 }
 h1:nth-child(4) > span > span > span{
-  animation-delay: 14s;
+  animation-delay: 12s;
 }
 
 h1:nth-child(5) > span > span > span{
-  animation-delay: 19s;
+  animation-delay: 17s;
 }
 
 h1:nth-child(6) > span > span > span{
